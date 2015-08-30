@@ -1,14 +1,29 @@
+port: 4000
+host: localhost
+safe: false
+
 # Site settings
-title: Your awesome title
-email: your-email@domain.com
+title: El Centro - Easy Jekyll Coming Soon Theme
+email: elcentro@elcentro.com
 description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  A theme designed to produce a simple coming soon page in a matter of minutes, saving you lots of time and effort in the process.
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://yourdomain.com" # the base hostname & protocol for your site
-twitter_username: jekyllrb
-github_username:  jekyll
+twitter_username: lukepatrick
+github_username:  lukechanning
 
-# Build settings
+### site serving configuration ###
+exclude: [CNAME, README.md, .gitignore]
+permalink: / ## disables post output
+timezone: null
+lsi: false
 markdown: kramdown
+highlighter: pygments
+
+###Add Bourbon
+gems: [bourbon, neat]
+
+###Fix Sass Directory
+sass:
+    sass_dir: _sass
+    style: compressed
