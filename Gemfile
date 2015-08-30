@@ -5,5 +5,3 @@ source "https://rubygems.org"
 gem 'jekyll'
 gem 'bourbon'
 gem 'neat'
-gem 'guard'
-gem 'guard-jekyll-plus'
