@@ -1,2 +1,10 @@
 //Let's make some basics
 
+    .page-content {
+         @include outer-container;
+         .wrapper {
+            text-align: center;
+            @include span-columns(8);
+            @include shift(2);
+         }
+    }
