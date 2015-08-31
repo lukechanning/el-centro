@@ -4,3 +4,45 @@
 //Create a variable for the font family
 
     $Lato: 'Lato', sans-serif;
+    $base-font-family: $Lato;
+    
+//Clear up our page heading
+
+    .page-heading {
+        margin-bottom: 1.5rem;
+        line-height: 3.2rem;
+    }
+    
+//Add some style to the type in our page-content
+
+    .page-content {
+        a, p, h1, h2, h3, h4 {
+            font-family: $Lato;
+            color: $text-color;
+            text-shadow: $text-shadow;
+        }
+        p {
+            line-height: 1.4rem;
+        }
+        a {
+            color: $link-color;
+        }
+        p, h3 {
+            font-size: rem(14);
+        }
+        h2, h3, h4 {
+            line-height: 2.2rem;
+            text-transform: uppercase;
+        }
+        h3 {
+            font-weight: 800;
+        }
+        h4 {
+            font-size: rem(16);
+            text-transform: uppercase;
+        }
+        h2 {
+            font-size: rem(24);
+            font-weight: 800;
+        }
+    }

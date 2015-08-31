@@ -1,0 +1,17 @@
+//Basic quick variables to make the theme yours
+
+    $base-font-size: rem(12px);
+    $base-line-height: 1.2rem;
+    $text-color: #F4F4F4;
+    $link-color: #F1F1F1;
+    $twentyFive: rgba(25,25,25,0.25);
+    $text-shadow: 0 1px 3px $twentyFive;
+    //Set this to 'transparent' if you'd rather not have that big beautiful gradient
+    $theme-gradient: linear-gradient(to bottom right, rgba(230, 230, 230, 0.8), #333333);
+    
+
+//Setup Mix-In for easy background change
+@mixin backgroundShorthand($imgpath,$position:top left,$size: cover,$repeat: no-repeat) {
+    background: url(#{$imgpath}) $repeat $position;
+    background-size: cover;
+}
