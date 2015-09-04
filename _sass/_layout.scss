@@ -1,7 +1,13 @@
 //Let's make some basics
+
+    body, html {
+        height: 100%;
+    }
+
     body {
     @include backgroundShorthand('/img/el-centro-bg.jpg');
         .page-content {
+            height: 100%;
             &:before {
                 content: '';
                 width: 100%;
@@ -28,12 +34,26 @@
              //Let's make the content itself look pretty
              i {
               font-size: rem(220px);
+              @media only screen and (max-width: 700px) {
+                font-size: 10rem;
+              }
+              @media only screen and (max-width: 400px) {
+                display: none;
+              }
              }
             
             //Letś take care of the home-top
             .home-top {
                 padding-top: 20%;
                 padding-top: 13vh;
+                 @media only screen and (max-width: 700px) {
+                    padding-top: 16%;
+                    padding-top: 9vh;
+                  }
+                  @media only screen and (max-width: 400px) {
+                    padding-top: 3%;
+                    padding-top: 3vh;
+                  }
             }
             
         }
