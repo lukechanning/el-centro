@@ -29,6 +29,8 @@
         }
         a {
             color: $link-color;
+            font-weight: 700;
+            text-decoration: underline;
         }
         p, h3 {
             font-size: rem(14);
