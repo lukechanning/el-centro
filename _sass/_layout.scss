@@ -5,10 +5,10 @@
     }
 
     body {
-    @include backgroundShorthand('/img/el-centro-bg.jpg');
+    //@include backgroundShorthand('/img/el-centro-bg.jpg');
         .page-content {
             height: 100%;
-            &:before {
+            .line-backer {
                 content: '';
                 width: 100%;
                 height: 100%;
@@ -17,7 +17,6 @@
                 right: 0;
                 bottom: 0;
                 left: 0;
-                background-image: $theme-gradient;
                 opacity: .8;
                 z-index: -100;
             }
@@ -42,7 +41,7 @@
               }
              }
             
-            //Letś take care of the home-top
+            //Let's take care of the home-top
             .home-top {
                 padding-top: 20%;
                 padding-top: 13vh;
